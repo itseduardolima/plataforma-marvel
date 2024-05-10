@@ -39,10 +39,12 @@ export const TextWrapper = styled.div`
 
 export const RegisterButton = styled.span`
   display: flex;
+  justify-content: center;
   gap: 5px;
   color: var(--bg-gray);
   font-size: 15px;
   margin-top: 1rem;
+  width: 100%;
 
   > a {
     color: var(--bg-red);

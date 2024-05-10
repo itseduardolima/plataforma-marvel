@@ -46,11 +46,11 @@ export const CheckBox = styled.div`
     width: 15px;
     height: 15px;
     cursor: pointer;
-    border: 1px solid #ff0000;
+    border: 1px solid var(--bg-red);
   }
 
   input:checked {
-    accent-color: #ff0000;
+    accent-color: var(--bg-red);
   }
 
   label {

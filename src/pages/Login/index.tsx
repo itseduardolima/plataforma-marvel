@@ -1,4 +1,4 @@
-import { FormWrapper, LoginContainer, RegisterButton, TextWrapper } from "./styled";
+import { FormWrapper, LoginContainer } from "./styled";
 import { LoginForm } from "../../components/LoginForm";
 import { Logo } from "../../shared/Logo";
 import { Background } from "../../shared/Background";
@@ -6,18 +6,11 @@ import { Background } from "../../shared/Background";
 export const Login = () => {
   return (
     <LoginContainer>
-      <Logo fontSize="100px" animate={true} />
+      <Logo animate={true} />
       <FormWrapper>
-        <TextWrapper>
-          <h3>Bem-vindo(a) de volta!</h3>
-          <span>Acesse sua conta:</span>
-        </TextWrapper>
-        <LoginForm />
-        <RegisterButton>
-          Ainda não tem o login? <a href="#">Cadastre-se</a>
-        </RegisterButton>
+        <LoginForm animate={true} />
       </FormWrapper>
-      <Background animate={true}/>
+      <Background animate={true} />
     </LoginContainer>
   );
 };

@@ -1,16 +1,14 @@
-import { LinkLogo, LogoContainer } from "./styled";
+import { LogoContainer } from "./styled";
 
 interface LogoProps {
   fontSize?: string;
   animate?: boolean;
 }
 
-export const Logo = ({ fontSize = "60px", animate }: LogoProps) => {
+export const Logo = ({ animate }: LogoProps) => {
   return (
-    <LinkLogo>
-      <LogoContainer fontSize={fontSize} animate={animate}>
-        MARVEL
-      </LogoContainer>
-    </LinkLogo>
+    <LogoContainer animate={animate}>
+      MARVEL
+    </LogoContainer>
   );
-}
+};

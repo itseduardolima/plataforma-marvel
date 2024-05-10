@@ -1,16 +1,10 @@
 import styled, { css } from "styled-components";
-import {
-  moveLogo,
-  moveLogoMobile,
-  moveLogoTablet,
-} from "../../animations";
+import { moveLogo, moveLogoMobile, moveLogoTablet } from "../../animations";
 
 interface LogoContainerProps {
   fontSize?: string;
   animate?: boolean;
 }
-
-export const LinkLogo = styled.div``;
 
 export const LogoContainer = styled.span.withConfig({
   shouldForwardProp: (prop) => prop !== "animate",
@@ -18,15 +12,13 @@ export const LogoContainer = styled.span.withConfig({
   z-index: 1000;
   background-color: var(--bg-red);
   color: white;
-  font-size: ${(props) => props.fontSize || "60px"};
   font-family: "Marvel", sans-serif;
-  font-weight: 100;
-
-  padding: 10px 10px;
-  line-height: 1;
-  letter-spacing: 2px;
-
+  text-align: center;
+  padding: 10px;
   cursor: default;
+  font-size: 100px;
+  width: 240px;
+  height: 80px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -42,7 +34,6 @@ export const LogoContainer = styled.span.withConfig({
       left: 50%;
       transform: translate(-50%, -50%);
       padding: 0px 15px;
-
       animation: ${moveLogo} 3s forwards;
     `}
 
@@ -50,7 +41,6 @@ export const LogoContainer = styled.span.withConfig({
     ${({ animate }) =>
       animate &&
       css`
-        font-size: 100px;
         animation: ${moveLogoTablet} 3s forwards;
       `}
   }
