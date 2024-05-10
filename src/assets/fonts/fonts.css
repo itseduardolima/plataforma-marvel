@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Marvel;
+  src: url('./Marvel-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  ascent-override: 70%;
+  descent-override: 0%;
+
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url('./Axiforma-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url('./Axiforma-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url('./Axiforma-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url('./Axiforma-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Axiforma;
+  src: url('./Axiforma-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
