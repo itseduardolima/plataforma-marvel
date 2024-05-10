@@ -14,6 +14,10 @@ export const Input = styled.input`
   width: 383px;
   height: 73px;
 
+  &:hover {
+    border: 2px solid var(--bg-red);
+  }
+
   &:focus {
     border: 2px solid var(--bg-red);
   }
