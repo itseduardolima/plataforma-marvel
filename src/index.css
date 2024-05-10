@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--bg-gray);
+  background-color: black;
+}
+
+:root {
+  --bg-red: #FF0000;
+  --bg-gray: #84848D;
+}
