@@ -1,11 +1,8 @@
-import './assets/fonts/fonts.css';
+import "./assets/fonts/fonts.css";
+import { AppRoutes } from "./routes";
 
 function App() {
-  return (
-    <>
-      <h1>Plataforma Marvel</h1>
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
