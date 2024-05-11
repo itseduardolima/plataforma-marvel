@@ -6,7 +6,7 @@ import { Background } from "../../components/Background";
 export const Login = () => {
   return (
     <LoginContainer>
-      <Logo animate={true} />
+      <Logo fontSize="100px" animate={true} />
       <FormWrapper>
         <LoginForm animate={true} />
       </FormWrapper>

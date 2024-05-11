@@ -12,12 +12,11 @@ export const LogoContainer = styled.span.withConfig({
   z-index: 1000;
   background-color: var(--bg-red);
   color: white;
+  font-size: ${(props) => props.fontSize || "60px"};
   font-family: "Marvel", sans-serif;
   text-align: center;
   cursor: default;
-  font-size: 100px;
-  width: 240px;
-  height: 80px;
+  padding: 5px;
   transition: all 0.3s ease;
 
   &:hover {
@@ -44,9 +43,8 @@ export const LogoContainer = styled.span.withConfig({
   }
 
   @media (max-width: 600px) {
-    width: 200px;
     font-size: 35px;
-    padding: 7px;
+ 
 
     ${({ animate }) =>
       animate &&

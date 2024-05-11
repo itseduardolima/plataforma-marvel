@@ -5,9 +5,9 @@ interface LogoProps {
   animate?: boolean;
 }
 
-export const Logo = ({ animate }: LogoProps) => {
+export const Logo = ({ fontSize = "60px", animate }: LogoProps) => {
   return (
-    <LogoContainer animate={animate}>
+    <LogoContainer fontSize={fontSize} animate={animate}>
       MARVEL
     </LogoContainer>
   );
