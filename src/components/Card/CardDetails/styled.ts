@@ -21,7 +21,7 @@ export const CardDetailsContent = styled.div.withConfig({
   gap: 10px;
   flex-direction: column;
   width: calc(55%);
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 50px 15px;
   width: 55%;
   position: absolute;
@@ -51,8 +51,8 @@ export const CardDetailsContent = styled.div.withConfig({
 
   //Imagem da estrela
   img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-top: 10px;
     margin-right: 5px;
   }
