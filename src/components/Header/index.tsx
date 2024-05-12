@@ -5,7 +5,7 @@ import { Logo } from "../Logo";
 import menuHeader from "../../assets/images/menu-header.svg";
 import profilePic from "../../assets/images/profile-picture.png";
 
-const Header = () => {
+export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleShowMenu = () => {
@@ -42,5 +42,3 @@ const Header = () => {
     </HeaderContainer>
   );
 };
-
-export default Header;

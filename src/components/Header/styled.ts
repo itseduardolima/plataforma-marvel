@@ -10,12 +10,14 @@ export const HeaderContainer = styled.header.withConfig({
 })<HeaderContainerProps>`
   padding: 20px 20px;
   box-shadow: red 0px 1px 10px 0px;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 
   @media (min-width: 768px) {
     &::before {
@@ -53,6 +55,7 @@ export const Nav = styled.nav.withConfig({
 })<HeaderContainerProps>`
   display: flex;
   justify-content: center;
+  background-color: black;
   align-items: center;
   gap: 70px;
   overflow: hidden;
@@ -83,7 +86,7 @@ export const Nav = styled.nav.withConfig({
     padding: ${({ showMenu }) => (showMenu ? "20px" : "0")};
     gap: 10px;
     top: 80px;
-    height: calc(100vh - 70px);
+    height: 30vh;
   }
 `;
 

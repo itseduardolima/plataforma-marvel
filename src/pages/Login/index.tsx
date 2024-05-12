@@ -1,7 +1,7 @@
 import { FormWrapper, LoginContainer } from "./styled";
 import { LoginForm } from "../../components/LoginForm";
 import { Logo } from "../../components/Logo";
-import { Background } from "../../components/Background";
+import { Background } from "../../components/LoginBg";
 
 export const Login = () => {
   return (
