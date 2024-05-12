@@ -6,3 +6,7 @@ export const MainContainer = styled.main`
   align-items: center;
   height: 100vh;
 `;
+export const MainContent = styled.div`
+  margin-top: 5rem;
+  z-index: 1;
+`;

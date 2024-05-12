@@ -18,16 +18,17 @@ export const CardDetailsContent = styled.div.withConfig({
 })<CardDetailsProps>`
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   flex-direction: column;
   width: calc(55%);
-  height: 439px;
-  padding: 30px;
+  margin-top: 20px;
+  padding: 50px 15px;
+  width: 55%;
   position: absolute;
   right: ${({ index }) => (index === 0 ? "0" : "auto")};
 
   h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   h2 {
@@ -36,7 +37,7 @@ export const CardDetailsContent = styled.div.withConfig({
   }
 
   h3 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1;
     margin-top: 10px;
@@ -57,7 +58,6 @@ export const CardDetailsContent = styled.div.withConfig({
   }
 
   @media (max-width: 1025px) {
-  
     h1 {
       font-size: 28px;
     }
@@ -83,8 +83,9 @@ export const CardDetailsContent = styled.div.withConfig({
   }
 
   @media (max-width: 600px) {
+    width: 100%;
     h1 {
-      font-size: 22px;
+      font-size: 25px;
     }
 
     h2 {
