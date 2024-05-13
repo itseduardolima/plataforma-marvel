@@ -66,7 +66,7 @@ export const moveLogoMobile = keyframes`
     transform: translate(-50%, -50%);
   }
   100% {
-    top: 25%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -79,7 +79,7 @@ export const moveLogoTablet = keyframes`
     transform: translate(-50%, -50%);
   }
   100% {
-    top: 30%;
+    top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

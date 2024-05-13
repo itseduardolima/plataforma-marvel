@@ -37,7 +37,7 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const RegisterButton = styled.span`
+export const LinkWrapper = styled.span`
   display: flex;
   justify-content: center;
   gap: 5px;

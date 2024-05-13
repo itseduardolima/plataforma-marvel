@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 import { fadeIn } from "../../animations";
 
@@ -73,7 +72,7 @@ export const CheckBox = styled.div`
   }
 `;
 
-export const LoginButton = styled(Link)`
+export const Button = styled.button`
   width: 100%;
   padding: 10px;
   border-radius: 33px;
