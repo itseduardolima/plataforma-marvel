@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Input } from "../../styles/Input";
-import { LinkWrapper, TextWrapper } from "../../pages/Login/styled";
-import { CheckBox, Form, Button, Options } from "./styled";
+import { TextWrapper } from "../../pages/Login/styled";
+import { CheckBox, Form, Button, Options, LinkWrapper } from "./styled";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,6 @@ export const LoginForm = ({ animate }: LoginFormProps) => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
 
     if (isLoggedIn === "true") {
-      // Se o usuário estiver logado, redireciona para a tela de personagens
       navigate("/personagens");
     }
   }, [navigate]);
@@ -31,6 +30,12 @@ export const LoginForm = ({ animate }: LoginFormProps) => {
   };
 
   const handleRegister = () => {
+
+    if (!username || !password || !confirmPassword) {
+      toast.error("Por favor, preencha todos os campos.");
+      return;
+    }
+    
     if (password !== confirmPassword) {
       toast.error("As senhas não coincidem.");
       return;
@@ -39,16 +44,21 @@ export const LoginForm = ({ animate }: LoginFormProps) => {
     localStorage.setItem("password", password);
 
     setShowRegister(false);
+
+    toast.success("Conta criada com sucesso!");
   };
 
   const handleLogin = () => {
     const storedUsername = localStorage.getItem("username");
     const storedPassword = localStorage.getItem("password");
 
+    if (!storedUsername || !storedPassword) {
+      toast.error("Nenhum usuário cadastrado.");
+      return;
+    }
+
     if (username === storedUsername && password === storedPassword) {
       toast.success("Login bem-sucedido!");
-
-      // Salvar o estado de login se a opção "Salvar login" estiver marcada
       if (saveLogin) {
         localStorage.setItem("isLoggedIn", "true");
       }
@@ -121,7 +131,9 @@ export const LoginForm = ({ animate }: LoginFormProps) => {
             </CheckBox>
             <a href="#">Esqueci a senha</a>
           </Options>
-          <Button onClick={handleLogin}>Entrar</Button>
+          <Button type="button" onClick={handleLogin}>
+            Entrar
+          </Button>
           <LinkWrapper>
             Ainda não tem o login?
             <a href="#" onClick={handleRegisterClick}>

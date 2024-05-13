@@ -36,18 +36,3 @@ export const TextWrapper = styled.div`
     color: var(--bg-gray);
   }
 `;
-
-export const LinkWrapper = styled.span`
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  color: var(--bg-gray);
-  font-size: 15px;
-  margin-top: 1rem;
-  width: 100%;
-
-  > a {
-    color: var(--bg-red);
-    text-decoration: none;
-  }
-`;
